@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_back"
+    tools:context="com.example.planner.AddEditNoteActivity">
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/white"
+        android:gravity="start|top"
+        android:hint="Заголовок"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColorHint="@color/main_back" />
+
+    <EditText
+        android:id="@+id/descET"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/white"
+        android:gravity="start|top"
+        android:hint="Описание"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColorHint="@color/main_back" />
+    <TextView
+        android:id="@+id/deadlineTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="335dp"
+        android:text="Дедлайн"
+        android:textColor="@color/main_text"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/white"
+        android:gravity="start|top"
+        android:hint="Дата"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColorHint="@color/main_back" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#AA91C5"
+        android:text="Выставить дату"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/categoryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="480dp"
+        android:text="Категория"
+        android:textColor="@color/main_text"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/spinnerEditPriority"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/priorityTV"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="76dp"
+        android:layout_toEndOf="@+id/spinnerEditCategories"
+        android:background="@color/white"
+        android:entries="@array/priorityArray" />
+
+    <TextView
+        android:id="@+id/priorityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="480dp"
+        android:text="Важность"
+        android:textColor="@color/main_text"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/spinnerEditCategories"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/categoryTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:entries="@array/categoriesArray" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="23dp"
+        android:contentDescription="plus"
+        android:src="@drawable/save_ic"
+        app:backgroundTint="@color/white"
+        app:tint="@color/main_text" />
+</RelativeLayout>

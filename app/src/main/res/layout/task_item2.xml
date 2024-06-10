@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="50dp"
+    app:strokeWidth="6dp"
+    app:strokeColor="@color/impotent2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toLeftOf="@id/idIVDelete"
+            android:padding="4dp"
+            android:text="Задача"
+            android:textColor="@color/main_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/idIVDelete"
+            android:padding="4dp"
+            android:text="Категория"
+            android:textColor="@color/main_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/idIVDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="3dp"
+            android:padding="3dp"
+            android:src="@drawable/delete_small"
+            app:tint="#469697" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/category"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="38dp"
+            android:padding="3dp"
+            android:src="@drawable/time"
+            app:tint="#469697" />
+
+        <TextView
+            android:id="@+id/deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category"
+            android:layout_margin="3dp"
+            android:layout_toEndOf="@+id/time"
+            android:padding="4dp"
+            android:text="Дедлайн"
+            android:textColor="@color/main_text"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
